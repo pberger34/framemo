@@ -7,11 +7,11 @@
 */
 
 var argv = require('yargs')
-        .usage('Usage: $0 [--port INTEGER [8080]] [--baseurl STRING ["/"]] [--redis STRING:INT [127.0.0.1:6379]] [--gaEnabled] [--gaAccount STRING [UA-2069672-4]]')
+        .usage('Usage: $0 [--port INTEGER [8090]] [--baseurl STRING ["/"]] [--redis STRING:INT [127.0.0.1:6379]] [--gaEnabled] [--gaAccount STRING [UA-2069672-4]]')
         .argv;
 
 exports.server = {
-	port: argv.port || 8080,
+	port: argv.port || 8090,
 	baseurl: argv.baseurl || '/'
 };
 
